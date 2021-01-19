@@ -46,12 +46,8 @@
         <h3>re4nightwing</h3>
         <a href="https://imgur.com/Izf5MKm"><img src="https://i.imgur.com/Izf5MKm.gif" title="Thanks from re4nightwing" /></a>
     </div>
-    <iframe src="https://www.myinstants.com/media/sounds/crazy-realistic-knocking-sound-troll-twitch-streamers_small_mYNcUdA.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-    <script>
-        var audio = document.getElementById("audio");
-        audio.src = URL.createObjectURL("https://www.myinstants.com/media/sounds/crazy-realistic-knocking-sound-troll-twitch-streamers_small_mYNcUdA.mp3");
-        audio.load();
-        audio.play();
-    </script>
+    <audio id="myAudio" controls autoplay>
+      <source src="https://www.myinstants.com/media/sounds/crazy-realistic-knocking-sound-troll-twitch-streamers_small_mYNcUdA.mp3" type="audio/mpeg">
+    </audio>
 </body>
 </html>
