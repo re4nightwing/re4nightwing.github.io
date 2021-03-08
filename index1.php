@@ -15,6 +15,7 @@
     <input type="submit" name="sub">
 </form>
 <?php
+    echo 'pakyu';
     if(isset($_POST['sub'])){
         $url = "https://www.google.com/recaptcha/api/siteverify";
         $data = [
