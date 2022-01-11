@@ -83,11 +83,18 @@
       }
       .copy-here{
         position: relative;
+        transition: all ease-in 0.3s;
+      }
+      .copy-here:hover .copy{
+        opacity: 1;
+        transition: all ease-in 0.3s;
       }
       .copy{
+        transition: all ease-in 0.3s;
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: 100%;
+        right: 0px;
+        opacity: 0;
       }
     </style>
   </head>
@@ -101,7 +108,7 @@
           bg-dark
         "
       >
-        <i class="fa fa-backward pr-3" aria-hidden="true"></i>Go Back
+        <i class="fa fa-backward pr-3" aria-hidden="true"></i> <b>Go Back</b>
       </div></a
     >
     <div class="container">
@@ -114,7 +121,7 @@
         <div class="col-3 text-left"><h4>Step 01:</h4></div>
         <div class="col-12 bg-dark p-2 rounded copy-here">
           <code class="lead" id="step1">sudo apt install i3-wm i3lock i3status i3blocks terminator rofi feh</code>
-          <button class="btn btn-info btn-sm copy" data-clipboard-target="#step1">copy</button>
+          <button class="btn btn-info btn-sm copy" data-clipboard-target="#step1"><i class="fa fa-clipboard" aria-hidden="true"></i> Copy</button>
         </div>
         
         <div class="col-12 text-left mt-2" >
